@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:id="mainPane" style="-fx-background-image: url(&quot;file:src/main/resources/SE2203b/Assignments/img/WesternBackground.png&quot;);             -fx-background-repeat: no-repeat; -fx-background-size: 100% 100%;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SE2203b.Assignments.MainApplicationController">
+    <top>
+        <MenuBar fx:id="mainMenu" BorderPane.alignment="CENTER">
+            <menus>
+                <Menu mnemonicParsing="false" text="File">
+                    <items>
+                  <MenuItem mnemonicParsing="false" text="Register" />
+                  <MenuItem mnemonicParsing="false" text="Login" />
+                        <MenuItem mnemonicParsing="false" text="Logout" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Contact Us">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Send Query" />
+                  <MenuItem mnemonicParsing="false" text="Send Feedback/Comments" />
+               </items></Menu>
+                <Menu mnemonicParsing="false" text="Explore Store">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Women" />
+                  <MenuItem mnemonicParsing="false" text="Men" />
+                  <MenuItem mnemonicParsing="false" text="Kids" />
+                    </items>
+                </Menu>
+            <Menu mnemonicParsing="false" text="Search Items" />
+                <Menu mnemonicParsing="false" text="Manage Cart" />
+                <Menu mnemonicParsing="false" text="Manage orders" />
+                <Menu mnemonicParsing="false" text="About">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#showAbout" text="About Us" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+    </top>
+</BorderPane>

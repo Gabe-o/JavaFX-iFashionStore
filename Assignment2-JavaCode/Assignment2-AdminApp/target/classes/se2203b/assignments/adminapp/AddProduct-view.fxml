@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="se2203b.assignments.adminapp.AddProductController">
+   <children>
+      <Label layoutX="241.0" layoutY="27.0" text="Add Product">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="144.0" layoutY="74.0" text="Name" />
+      <Label layoutX="428.0" layoutY="74.0" text="Price" />
+      <Label layoutX="144.0" layoutY="130.0" text="Brand" />
+      <Label layoutX="280.0" layoutY="192.0" text="Catalog" />
+      <Label layoutX="427.0" layoutY="130.0" text="Stock" />
+      <TextField fx:id="nameField" layoutX="60.0" layoutY="96.0" prefWidth="200.0" />
+      <TextField fx:id="priceField" layoutX="342.0" layoutY="96.0" prefWidth="200.0" />
+      <TextField fx:id="brandField" layoutX="60.0" layoutY="153.0" prefWidth="200.0" />
+      <TextField fx:id="stockField" layoutX="342.0" layoutY="153.0" prefWidth="200.0" />
+      <ComboBox fx:id="catalogBox" layoutX="200.0" layoutY="216.0" prefWidth="200.0" />
+      <Button fx:id="saveBtn" layoutX="110.0" layoutY="282.0" mnemonicParsing="false" onAction="#save" prefHeight="50.0" prefWidth="100.0" text="Save" />
+      <Button fx:id="cancelBtn" layoutX="392.0" layoutY="282.0" mnemonicParsing="false" onAction="#cancel" prefHeight="50.0" prefWidth="100.0" text="Cancel" />
+   </children>
+</AnchorPane>

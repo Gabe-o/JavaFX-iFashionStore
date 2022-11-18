@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="se2203b.assignments.adminapp.EditDeleteProductController">
+   <children>
+      <Label layoutX="203.0" layoutY="28.0" text="Edit/Delete Products">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="34.0" layoutY="58.0" text="Select" underline="true" />
+      <Label layoutX="425.0" layoutY="75.0" text="Name" />
+      <Label layoutX="139.0" layoutY="75.0" text="Catalog" />
+      <ComboBox fx:id="selectCatalogBox" layoutX="60.0" layoutY="92.0" onAction="#updateNameComboBoxData" prefWidth="200.0" />
+      <ComboBox fx:id="selectNameBox" layoutX="341.0" layoutY="92.0" onAction="#setUpEditFields" prefWidth="200.0" />
+      <Label layoutX="34.0" layoutY="126.0" text="Edit" underline="true" />
+      <Label layoutX="144.0" layoutY="143.0" text="Name" />
+      <Label layoutX="428.0" layoutY="143.0" text="Price" />
+      <Label layoutX="144.0" layoutY="199.0" text="Brand" />
+      <Label layoutX="280.0" layoutY="255.0" text="Catalog" />
+      <Label layoutX="427.0" layoutY="199.0" text="Stock" />
+      <TextField fx:id="nameField" layoutX="60.0" layoutY="165.0" prefWidth="200.0" />
+      <TextField fx:id="priceField" layoutX="342.0" layoutY="165.0" prefWidth="200.0" />
+      <TextField fx:id="brandField" layoutX="60.0" layoutY="222.0" prefWidth="200.0" />
+      <TextField fx:id="stockField" layoutX="342.0" layoutY="222.0" prefWidth="200.0" />
+      <ComboBox fx:id="catalogBox" layoutX="200.0" layoutY="279.0" prefWidth="200.0" />
+      <Button layoutX="110.0" layoutY="328.0" mnemonicParsing="false" onAction="#delete" prefHeight="50.0" prefWidth="100.0" text="Delete" />
+      <Button layoutX="251.0" layoutY="328.0" mnemonicParsing="false" onAction="#edit" prefHeight="50.0" prefWidth="100.0" text="Edit" />
+      <Button fx:id="cancelBtn" layoutX="391.0" layoutY="328.0" mnemonicParsing="false" onAction="#cancel" prefHeight="50.0" prefWidth="100.0" text="Cancel" />
+   </children>
+</AnchorPane>
